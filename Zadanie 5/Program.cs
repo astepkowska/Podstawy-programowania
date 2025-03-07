@@ -16,7 +16,11 @@ namespace Zadanie_5
             Console.WriteLine("Podaj wysokość h=");
             h = Convert.ToDouble(Console.ReadLine());\
             l = Math.Sqrt(h * h+ r * r); //tworząca stożka
-            V=1/3.0
+            V = 1 / 3.0 * Math.PI * r * r * h;
+            Pc = Math.PI * r * r + Math.PI * r * l;
+            Console.WriteLine("V ={0}", V);
+            Console.WriteLine("Pc ={0}", Pc);
+            Console.ReadKey(true);
         }
     }
 }
